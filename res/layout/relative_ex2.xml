@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="#eee"
+        >
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_centerHorizontal="true"
+              android:layout_marginTop="5dp"
+              android:textSize="17sp"
+              android:text="DevPad.RU"/>
+    <RelativeLayout android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="#ccc"
+                    android:paddingTop="10dp"
+            >
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_centerHorizontal="true"
+                  android:id="@+id/title"
+                  android:layout_marginBottom="20dp"
+                  android:textStyle="bold"
+                  android:text="Введите Ваши данные"/>
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginLeft="20dp"
+                  android:layout_marginRight="30dp"
+                  android:id="@+id/text_login"
+                  android:layout_below="@id/title"
+                  android:text="Login:"/>
+        <EditText android:layout_width="fill_parent"
+                  android:layout_height="30dp"
+                  android:layout_marginRight="20dp"
+                  android:layout_below="@id/title"
+                  android:layout_toRightOf="@id/text_login"/>
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="20dp"
+                  android:layout_marginLeft="20dp"
+                  android:layout_marginRight="5dp"
+                  android:id="@+id/text_password"
+                  android:layout_below="@id/text_login"
+                  android:text="Password:"/>
+        <EditText android:layout_width="fill_parent"
+                  android:layout_height="30dp"
+                  android:layout_marginRight="20dp"
+                  android:layout_marginTop="20dp"
+                  android:layout_below="@id/text_login"
+                  android:layout_toRightOf="@id/text_password"/>
+        <Button android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Войти"
+                android:layout_margin="20dp"
+                android:id="@+id/btn_enter"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/text_password"/>
+    </RelativeLayout>
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignParentBottom="true"
+              android:layout_centerHorizontal="true"
+              android:textSize="15sp"
+              android:textColor="#00f"
+              android:id="@+id/reg_link"
+              android:text="Зарегистрироваться"/>
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_centerHorizontal="true"
+              android:layout_above="@id/reg_link"
+              android:textSize="17sp"
+              android:text="Нет аккаунта?"/>
+</RelativeLayout>
